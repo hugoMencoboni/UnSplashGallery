@@ -6,4 +6,8 @@
         transform: scale(1.05);
         filter: grayscale(0);
     }
+
+    img {
+        opacity: 0;
+    }
 }

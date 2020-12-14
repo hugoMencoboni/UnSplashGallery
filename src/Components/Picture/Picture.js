@@ -9,7 +9,7 @@ const Picture = props => {
     const src = `https://source.unsplash.com/${(props.w || 1)*500}x${(props.h || 1)*500}/?${theme || 'random'}&${id}`
     return (
         <div id={id} className={classes.join(' ') + ' picture__container'}>
-            <img src={src} alt=""/>            
+            <img loading="eager" src={src} alt={theme + ' picture'} className={`fade-in-${props.position}`}/>            
         </div>
     );
 }
