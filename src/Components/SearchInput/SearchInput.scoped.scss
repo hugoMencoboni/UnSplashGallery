@@ -6,19 +6,20 @@
     margin: 0 auto;
     padding: .2em 1em;
     border-radius: 50px;
-    border: 1px solid var(--clr-900);
+    border: 1px solid var(--clr-700);
     background-color: var(--clr-000);
 
     input[type='text']{
         border: none;
         background-color: var(--clr-000);
+        color: var(--clr-700);
     }
 
     .search-icon {    
         width: 1em;   
         
         path {
-            stroke: var(--clr-1000);
+            stroke: var(--clr-700);
             stroke-width: .04em;
         }
     }
