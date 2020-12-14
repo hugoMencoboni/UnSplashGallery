@@ -1,3 +1,33 @@
+:root {
+  --clr-000: #ffffff;
+  --clr-100: #f1f1f1;
+  --clr-200: #dbdbdb;
+  --clr-300: #c5c5c5;
+  --clr-400: #afafaf;
+  --clr-500: #999999;
+  --clr-600: #838383;
+  --clr-700: #6e6e6e;
+  --clr-800: #585858;
+  --clr-900: #424242;
+  --clr-1000: #2c2c2c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-000: #2c2c2c;
+    --clr-100: #424242;
+    --clr-200: #585858;
+    --clr-300: #6e6e6e;
+    --clr-400: #838383;
+    --clr-500: #999999;
+    --clr-600: #afafaf;
+    --clr-700: #c5c5c5;
+    --clr-800: #dbdbdb;
+    --clr-900: #f1f1f1;
+    --clr-1000: #ffffff;
+  }
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -71,4 +101,11 @@ select {
 
 html {
   font-size: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-000);
 }

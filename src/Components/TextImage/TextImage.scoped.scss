@@ -3,8 +3,7 @@
     text-align: center;
     font-size: 5rem;
     font-weight: 900;
-    color: white;
-    color: white;  /* Fallback: assume this color ON TOP of image */
+    color: var(--clr-000);
     background: url(../../Assets/Images/photo-1455659817273-f96807779a8a.webp) no-repeat;
     background-clip: text;
     -webkit-background-clip: text;
