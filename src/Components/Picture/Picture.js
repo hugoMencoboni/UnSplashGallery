@@ -4,9 +4,11 @@ import { uuid } from 'uuidv4';
 
 const Picture = props => {
     const id = uuid();
-    const src = `https://source.unsplash.com/500x500/?dog&${id}`
+    let theme = '';
+    let classes = [`w-${props.w || 1}`, `h-${props.h || 1}`];
+    const src = `https://source.unsplash.com/${(props.w || 1)*500}x${(props.h || 1)*500}/?${theme || 'random'}&${id}`
     return (
-        <div id={id} className="picture__container">
+        <div id={id} className={classes.join(' ') + ' picture__container'}>
             <img src={src} alt=""/>            
         </div>
     );

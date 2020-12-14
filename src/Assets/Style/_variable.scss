@@ -1,0 +1,11 @@
+@for $i from 1 through 4 {
+  .w-#{$i} {
+      grid-column: span $i;
+  }
+}
+
+@for $i from 1 through 2 {
+  .h-#{$i} {
+      grid-row: span $i;
+  }
+}
