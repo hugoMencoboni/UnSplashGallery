@@ -1,10 +1,13 @@
 import React from 'react';
+import { SearchTermAction } from '../../store/Searchs/SearchTerm.Action';
+import store from '../../store/root.Store';
 import  './SearchInput.scoped.scss';
+import { connect } from 'react-redux'
 
 const SearchInput = props => {
     return (
         <div className="container">
-            <input type="text" name="search"/>
+            <input type="text" name="search" onChange={($event) => props.inputChange($event.target.value)}/>
             <svg className="search-icon" viewBox="0 0 20 20">
                 <path d="M19.129,18.164l-4.518-4.52c1.152-1.373,1.852-3.143,1.852-5.077c0-4.361-3.535-7.896-7.896-7.896
                     c-4.361,0-7.896,3.535-7.896,7.896s3.535,7.896,7.896,7.896c1.934,0,3.705-0.698,5.078-1.853l4.52,4.519
@@ -15,4 +18,11 @@ const SearchInput = props => {
     );
 }
 
-export default SearchInput;
+const mapDispatchToProps = {
+    inputChange: (term) => store.dispatch(SearchTermAction(term)),
+};
+
+export default connect(
+    null,
+    mapDispatchToProps
+  )(SearchInput);
