@@ -6,7 +6,7 @@ import Gallery from './Components/Gallery/Gallery';
 function App() {
   return (
     <div>
-      <TextImage text="UnSplash gallery" type="h1"></TextImage>
+      <TextImage text="UnSplash Gallery" type="h1"></TextImage>
       <div className="searchInput-container">
         <SearchInput></SearchInput>
       </div>

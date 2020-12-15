@@ -9,6 +9,6 @@
 
 @for $i from 0 through 30 {
   .fade-in-#{$i} {
-    animation: fade-in .5s ease-in-out $i*.2s forwards;
+    animation: fade-in 1s ease-in-out $i*.2s forwards;
   }
 }
