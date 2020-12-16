@@ -1,6 +1,6 @@
 import React from 'react';
 import  './Picture.scoped.scss';
-import { uuid } from 'uuidv4';
+import { v4 as uuid } from "uuid";
 
 const Picture = props => {
     const id = uuid();
