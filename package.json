@@ -1,6 +1,6 @@
 {
-  "homepage": "http://hugomencoboni.github.io/unspashDisplay",
-  "name": "unsplash-display",
+  "homepage": "http://hugomencoboni.github.io/UnSplashGallery",
+  "name": "unsplash-gallery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
